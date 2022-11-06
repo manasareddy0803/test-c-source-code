@@ -1,6 +1,6 @@
 #include <stdio.h>
  
-int main()
+biggest()
 {
     int A, B, C;
  
