@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+palindrome() {
     int n, n1, rev = 0, rem;
     
     printf("Enter any number: ");
