@@ -1,6 +1,6 @@
 #include<string.h>
 
-int main(void)
+reverse(void)
 {
     char mystrg[60];
     int leng, g;
