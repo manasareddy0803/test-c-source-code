@@ -1,22 +1,25 @@
 #include <stdio.h>
-palindrome() {
-  int n, reversed = 0, remainder, original;
-    printf("Enter an integer: ");
-    scanf("%d", &n);
-    original = n;
 
-    // reversed integer is stored in reversed variable
-    while (n != 0) {
-        remainder = n % 10;
-        reversed = reversed * 10 + remainder;
-        n /= 10;
+int main() {
+    int n, n1, rev = 0, rem;
+    
+    printf("Enter any number: ");
+    scanf("%d", &n);    
+    n1 = n;
+    
+    //logic
+    while (n > 0){
+        rem = n % 10;
+        rev = rev * 10 + rem;
+        n = n / 10;
     }
+    
+    if (n1 == rev){
+        printf("Given number is a palindromic number"); 
+    }
+    else{
+        printf("Given number is not a palindromic number"); 
+    }    
+    return 0; 
+} 
 
-    // palindrome if orignal and reversed are equal
-    if (original == reversed)
-        printf("%d is a palindrome.", original);
-    else
-        printf("%d is not a palindrome.", original);
-
-    return 0;
-}
